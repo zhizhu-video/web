@@ -1,7 +1,7 @@
 module.exports = {
     title: "vitePress Demo",// 网站标题
     description: 'Demo', //网站描述
-    base: '/player/', //  部署时的路径 默认 /  可以使用二级地址 /base/
+    base: '/web/', //  部署时的路径 默认 /  可以使用二级地址 /base/
     lang: 'CN', //语言
     // repo: 'vuejs/vitepress',
     head: [
