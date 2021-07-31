@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+# dist
+*.local
+.gitee
+vue3-vite-demo/node_modules
+vue3-vite-demo/dist

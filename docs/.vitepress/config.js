@@ -1,45 +1,3 @@
-# vitePress
-## 创建项目
-```js
-mkdir vitepress-starter && cd vitepress-starter
-```
-## 初始化项目
-```js
-yarn init
-```##  安装 `vitePress`
-```js
-yarn add --dev vitepress
-```
-## 创建一个docs页面
-```js
-mkdir docs && echo '# Hello VitePress' > docs/index.md
-```
-## 在package.json文件添加配置
-```json
-{
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
-  }
-}
-```
-## 打开服务
-```js
-yarn docs:dev
-```
-# 其实上面的操作在vitePress官方网站 --> [vitePress](https://vitepress.vuejs.org/)
-
-## 在Docs目录下创建一个目录 `.vitepress` 
-```js
-.vitepress
-或用命令创建
-mkdir .vitepress
-```
-## 在`.vitepress` 目录下创建 `config.js` 文件
-
-## 在`config.js`文件中写入以下代码 本文件参数配置见官方地址 [vitepress->config.js](https://vitepress.vuejs.org/config/basics.html) 
-``` js
 module.exports = {
     title: "vitePress Demo",// 网站标题
     description: 'Demo', //网站描述
@@ -112,23 +70,3 @@ function getpagesSidebar() {
         }
     ]
 }
-```
-
-## vitepress 配置结束
-
-::: tip
- 最后说明一下 `yarn docs:build` 后生成的文件在 `.vitepress` 文件夹dist内
-:::
-
-
-# 最终配置完毕 打包
-```
-vitepress.zip
-```
-+ 直接下载源码 如下操作
-```
-`yarn`    -- 下载依赖
-
-`yarn run docs:dev`   --  启动服务
-```
-+  <font color=Salmon>开始愉快之旅吧！</font>
