@@ -4,26 +4,18 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
   workflow_dispatch:
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-
-    steps:
-      
-      - uses: actions/checkout@v2
-
-     
+    steps:      
+      - uses: actions/checkout@v2     
       - name: install
         run: |
          yarn
          yarn run docs:build    
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.5.9  // 引用别人的部署插件
+        uses: JamesIves/github-pages-deploy-action@3.5.9
         with: 
           ACCESS_TOKEN: ${{ secrets.AUTOPAGE }}
           BRANCH: gh-pages
