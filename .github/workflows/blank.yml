@@ -16,4 +16,4 @@ jobs:
         with: 
           ACCESS_TOKEN: ${{ secrets.AUTOPAGE }}
           BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
+          FOLDER: docs/.vitepress/dist
