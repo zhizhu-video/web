@@ -2,7 +2,7 @@ name: 'github actions build and deploy gh-pages'
 on: 
   push:
     branches:
-      - master  // 基于 master 分支，如果你的分支不是这个，请切换
+      - main  // 基于 master 分支，如果你的分支不是这个，请切换
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest   // 使用 ubuntu 服务器
@@ -12,7 +12,7 @@ jobs:
         with: 
           persist-credentials: false
       - name: install and build
-        run: |        // 这里执行 安装 打包
+        run: |        
           npm install
           npm run docs:build
       - name: Deploy
