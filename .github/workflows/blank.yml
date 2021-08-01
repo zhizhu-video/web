@@ -23,7 +23,7 @@ jobs:
          yarn
          yarn run docs:build    
       - name: Deploy
-         uses: JamesIves/github-pages-deploy-action@3.5.9
+        uses: JamesIves/github-pages-deploy-action@3.5.9  // 引用别人的部署插件
         with: 
           ACCESS_TOKEN: ${{ secrets.AUTOPAGE }}
           BRANCH: gh-pages
