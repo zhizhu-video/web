@@ -5,19 +5,19 @@ set -e
 yarn run docs:build
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+cd docs/.vitepress/dist
 
 # 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+echo 'vite.zhizhu.video' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 如果你想要部署到 https://USERNAME.github.io   https://github.com/zhizhu-video/web.git
-git push -f git@github.com:zhizhu-video/zhizhu-video.github.io.git master
+# git push -f git@github.com:zhizhu-video/zhizhu-video.github.io.git master
 
 # 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
-# git push -f git@github.com:zhizhu-video/web.git master:gh-pages
+git push -f git@github.com:zhizhu-video/web.git master:gh-pages
 
 cd –

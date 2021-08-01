@@ -1,7 +1,7 @@
 module.exports = {
     title: "vitePress Demo",// 网站标题
     description: 'Demo', //网站描述
-    base: '/web/', //  部署时的路径 默认 /  可以使用二级地址 /base/
+    base: '/', //  部署时的路径 默认 /  可以使用二级地址 /base/
     lang: 'CN', //语言
     // repo: 'vuejs/vitepress',
     head: [
@@ -20,7 +20,7 @@ module.exports = {
           repo: 'https://gitee.com/jsonapi/player',
           // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
           // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-          repoLabel: '查看源码',      
+          repoLabel: 'github',      
           // 以下为可选的编辑链接选项      
           // 假如你的文档仓库和项目本身不在一个仓库：
           docsRepo: 'https://gitee.com/jsonapi/player',
