@@ -10,7 +10,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.AUTOPAGE }}
         TARGET_REPO: zhizhu-video/web
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: yarn && yarn run docs:build
