@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "vitepress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,9 @@
  "deploy": "deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://e.coding.net/qingshu/vue/blog.git",
+  "repository": "https://github.com/zhizhu-video/web",
   "author": "supbose <yshxw@qq.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "vitepress": "^0.15.6"
   }
