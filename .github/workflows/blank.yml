@@ -16,8 +16,8 @@ jobs:
           yarn
           yarn run docs:build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.5.9  // 引用别人的部署插件
+        uses: JamesIves/github-pages-deploy-action@4.1.4  // 引用别人的部署插件
         with: 
           ACCESS_TOKEN: ${{ secrets.AUTOPAGE }}   // 这里需要设置成你的 token
           BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
+          FOLDER: docs/.vitepress/dist
